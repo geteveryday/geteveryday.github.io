@@ -1,0 +1,10 @@
+body {
+    background-image: url(../res/background.gif);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+html, body {
+    height: 100%;
+}
