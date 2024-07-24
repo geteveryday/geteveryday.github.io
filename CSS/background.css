@@ -1,10 +1,6 @@
-body {
-    background-image: url(../res/background.gif);
-    
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-html, body {
-    height: 100%;
+body
+{
+    background-color: darkolivegreen;
+    background-image: url("../res/background.png");
+    background-size: cover;
 }
