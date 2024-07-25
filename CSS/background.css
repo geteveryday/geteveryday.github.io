@@ -3,4 +3,5 @@ body
     background-color: darkolivegreen;
     background-image: url("../res/background.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
