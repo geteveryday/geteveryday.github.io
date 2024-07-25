@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ch-ZN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .topTitleBox
+        {
+            width: 200px;
+            height: 30px;
+            background-color: aquamarine;
+             text-align: center; 
+             margin: 0 auto;     
+        }
+        ul{
+            list-style: none;
+        }
+        
+      .topTitleBox .item
+        {
+            float: left;
+            text-align: center; 
+            width: 98px;
+            border: 1px solid green;
+            line-height: 30px;
+        }
+        .item:hover
+        {
+            background-color: chartreuse;
+        }
+        .item ul
+        {
+            display: none;
+        }
+        .item:hover ul
+        {
+            display: block;
+        }
+        .item:hover li:hover
+        {
+           background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="topTitleBox">
+        <ul>
+            <li class="item">C/C++
+                <ul>
+                    <li><a href="">源代码</a></li>
+                    <li><a href="">知识点</a></li>
+                    <li><a href="">运行效果</a></li>
+                </ul>
+                
+            </li>
+            <li class="item">前端
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
