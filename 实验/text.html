@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            height: 100%;
+            background-image: url("background.png"); /* 背景图像的URL */
+            background-size: cover; /* 确保图像覆盖整个背景 */
+            background-position: center; /* 居中对齐图像 */
+            background-repeat: no-repeat; /* 不重复图像 */
+            opacity: 0;
+            transition: opacity 1s ease-out;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8); /* 半透明背景色 */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(68, 68, 68, 0.8); /* 半透明背景色 */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(85, 85, 85, 0.8); /* 半透明背景色 */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.8); /* 半透明背景色 */
+            border-radius: 10px;
+        }
+        .content, .sidebar {
+            background-color: rgba(255, 255, 255, 0.8); /* 半透明背景色 */
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .post {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1rem;
+        }
+        .post h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.8); /* 半透明背景色 */
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>个人博客</h1>
+    </header>
+    <nav>
+        <a href="#home">主页</a>
+        <a href="#about">关于我</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <section class="intro">
+                <h2>简介</h2>
+                <p>欢迎来到我的个人博客！这里记录了我的学习、编程经验和一些技术分享。希望你能从中获得一些有价值的知识。</p>
+            </section>
+            <section class="latest-posts">
+                <h2>最新文章</h2>
+                <div class="post">
+                    <h2><a href="#">文章标题 1</a></h2>
+                    <p>这是文章的摘要，简要介绍文章内容。</p>
+                </div>
+                <div class="post">
+                    <h2><a href="#">文章标题 2</a></h2>
+                    <p>这是文章的摘要，简要介绍文章内容。</p>
+                </div>
+                <div class="post">
+                    <h2><a href="#">文章标题 3</a></h2>
+                    <p>这是文章的摘要，简要介绍文章内容。</p>
+                </div>
+            </section>
+        </div>
+        <aside class="sidebar">
+            <h3>关于我</h3>
+            <p>这里是关于我的简介，详细介绍个人背景、技术栈、兴趣爱好等信息。</p>
+            <h3>最新项目</h3>
+            <ul>
+                <li><a href="#">项目1</a></li>
+                <li><a href="#">项目2</a></li>
+                <li><a href="#">项目3</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2024 个人博客 版权所有</p>
+    </footer>
+    <script>
+        window.onload = function() {
+            document.body.style.opacity = 1;
+        };
+    </script>
+</body>
+</html>
