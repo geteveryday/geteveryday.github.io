@@ -1,0 +1,12 @@
+.letterBox {
+    height: 100px;
+    background-color: rgb(176, 184, 167);
+    margin: 0 auto;
+}
+
+
+.letterBox
+{
+    line-height: 50px;
+    font-size: 20px;
+}

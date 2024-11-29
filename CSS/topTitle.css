@@ -1,0 +1,14 @@
+.topTitle {
+    background-color: rgb(150, 31, 7);
+    background-image: url(../Resource/title.jpg);
+    width: 100%;
+    /* 背景容器宽度为100%，可以根据需要调整 */
+    height: 100vh;
+    /* 背景容器高度为100vh，即占满整个视口 */
+    background-repeat: no-repeat;
+    /* 禁止背景图重复 */
+    background-size: contain;
+    /* 确保背景图完全显示，且保持比例 */
+    background-position: center;
+    /* 背景图居中显示 */
+}

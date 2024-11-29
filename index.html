@@ -2,82 +2,46 @@
 <html lang="ch-ZN">
 
 <head>
-
+    <link rel="icon" href="Resource/logo.png" type="image/x-icon">
+    <title>小谢的个人博客</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="res/favicon.png">
-   
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/layout.css">
-    <link rel="stylesheet" href="CSS/debug.css">
-
-    <title>小谢的个人博客</title>
-   
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/topTitle.css">
+    <link rel="stylesheet" href="CSS/topMenu.css">
+    <link rel="stylesheet" href="CSS/articleBox.css">
 </head>
-
+<!--标题部分-->
 <body>
-    <header>
-        
-        <div class="lifeMotto">怠一日，日复一日，怠终生。
-            勤一时，时复一时，日渐进。</div>
-            <div class="welcome">欢迎来到我的个人博客!</div>
-    </header>
-
-    <nav>
-        <div class="navigation">
-            <ul >
-                <li class="navList">主页</li>
-                <li class="navList">自我介绍</li>
-                <li class="navList">工具箱</li>
+    <div class="topTitle">
+        <div class="topMenu">
+            <ul class="menuList">
+                <li><img class="logo" src="Resource/logo.png" alt=""></li>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#services">技术博客</a></li>
+                <li><a href="#about">项目展示</a></li>
+                <li><a href="#contact">技能图</a></li>
+                <li><a href="#contact">联系我</a></li>
             </ul>
         </div>
-    </nav>
+    </div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="box1"></div>
-    <div class="box1"></div>
-    <div class="box1"></div>
-    <div class="box1"></div>
-    <div class="box1"></div>
-    <div class="box1"></div>
-    <div class="box1"></div>
-    <div class="box1"></div>
-    <div class="box1"></div>
-    <div class="box1"></div>
-    <div class="box1"></div>
-    <div class="box1"></div>
-
+<!-- 文章部分 -->
+<a href="article.html" class="articleBoxLink">
+    <div class="articleBox">
+        <div class="articleRow">
+            <img src="Resource/title.jpg" alt="Article Image" class="articleImage">
+            <div class="articleText">
+                <h1 class="articleTitle">这是一篇文章标题</h1>
+                <p class="articleContent">这里是文章内容，超出三行将显示为省略号..</p>
+            </div>
+        </div>
+        <div class="articleDate">2024年11月29日</div>
+    </div>
+</a>
 </body>
-
 </html>
-s

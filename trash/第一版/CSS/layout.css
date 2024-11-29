@@ -19,6 +19,7 @@ header {
     font-family: 仿宋, 宋体, 黑体;
 }
 
+
 /* 欢迎语 */
 .welcome {
     line-height: 50px;
@@ -28,7 +29,7 @@ header {
 }
 
 nav {
-    background-color: rgba(81, 81, 81, 0.8);
+    background-color: rgb(168, 178, 154);
     height: 40px;
     text-align: center;
     line-height: 40px;
@@ -38,7 +39,7 @@ nav {
 .navigation {
     width: 300px;
     height: 40px;
-    background-color: aquamarine;
+    background-color: rgb(168, 178, 154);
     text-align: center;
     margin: 0 auto;
 }
@@ -47,15 +48,35 @@ nav {
 .navList {
     margin: 0 auto;
     text-align: center;
-    text-align: center; 
-    border: 1px solid green;
-    border: 0px 1px;
     line-height: 40px;
 }
 
 .navList {
     float: left;
-    width: 98px;
+    width: 100px;
+    background-color: rgba(198, 188, 174, 0.8);
+    ;
+}
+
+.navAction {
+    font-family: 仿宋, 宋体, 黑体;
+    font-size: 20px;
+}
+
+.mainSpace {
+    top: 100px;
+    width: 800px;
+    height: 800px;
+    background-color: rgb(177, 156, 87);
+    margin: 0 auto;
+    position: relative;
+    padding: .625rem;
+}
+
+.letterBox {
+    height: 100px;
+    background-color: rgb(176, 184, 167);
+    margin: 0 auto;
 }
 
 

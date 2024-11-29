@@ -1,0 +1,51 @@
+/* .topMenu 固定在页面顶部 */
+.topMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* 确保它在最上层 */
+}
+
+/* 菜单项的基本样式 */
+.menuList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* 使用 flexbox 实现水平排列 */
+    justify-content: center; /* 居中对齐菜单项 */
+}
+
+/* 每个菜单项 */
+.menuList li {
+    margin: 0 15px; /* 菜单项之间的间隔 */
+}
+
+/* 链接样式 */
+.menuList li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+/* 鼠标悬停时改变菜单项的背景色 */
+.menuList li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* 页面内容区域，确保它不被菜单遮挡 */
+.content {
+    margin-top: 60px; /* 为了避免菜单遮挡内容，给页面内容留出空间 */
+}
+
+.logo
+{
+    width: 30px;
+    height: 30px;
+}

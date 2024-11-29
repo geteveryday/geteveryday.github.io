@@ -1,0 +1,74 @@
+/* 文章盒子布局 */
+.articleBox {
+    max-width: 800px;  /* 限制文章最大宽度 */
+    margin: 50px auto; /* 自动左右外边距，居中；50px 是上下外边距 */
+    padding: 20px;     /* 给文章一些内边距 */
+    background-color: rgb(203, 51, 20);  /* 背景颜色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* 阴影效果 */
+    border-radius: 8px;  /* 圆角效果 */
+    min-height: 140px;
+    position: relative;  /* 设置相对定位，以便定位子元素 */
+}
+
+/* 鼠标悬停时改变背景颜色 */
+.articleBox:hover {
+    background-color: rgb(240, 100, 30);  /* 鼠标悬停时的背景颜色 */
+}
+
+/* 文章日期 */
+.articleDate {
+    position: absolute;  /* 使用绝对定位 */
+    bottom: 10px;        /* 距离底部 10px */
+    right: 10px;         /* 距离右边 10px */
+    font-size: 14px;     /* 日期字体大小 */
+    color: white;        /* 日期文字颜色 */
+    background-color: rgba(89, 60, 60, 0.7);  /* 半透明背景，增强可读性 */
+    padding: 5px 10px;   /* 给日期加点内边距 */
+    border-radius: 5px;  /* 日期背景圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 日期的阴影效果 */
+}
+
+/* 文章标题样式 */
+.articleTitle {
+    font-size: 24px;            /* 字体大小 */
+    font-weight: bold;          /* 加粗 */
+    white-space: nowrap;        /* 防止换行 */
+    overflow: hidden;           /* 超出部分隐藏 */
+    text-overflow: ellipsis;    /* 超出部分显示省略号 */
+    color: white;               /* 字体颜色 */
+    margin: 0;                  /* 移除默认外边距 */
+    line-height: 1.2;           /* 设置标题行高 */
+}
+
+/* 文章内容样式 */
+.articleContent {
+    font-size: 16px;            /* 设置字体大小 */
+    line-height: 1.5;           /* 设置行高 */
+    color: white;               /* 设置文本颜色 */
+    display: -webkit-box;       /* 使用 flexbox 布局 */
+    -webkit-box-orient: vertical; /* 设置为纵向布局 */
+    -webkit-line-clamp: 3;      /* 设置显示 3 行，超出的部分显示省略号 */
+    overflow: hidden;           /* 超出部分隐藏 */
+    text-overflow: ellipsis;    /* 超出部分显示省略号 */
+    margin: 20px 0 0 0;         /* 设置上下外边距 */
+}
+
+/* 文章盒子内的每一行（如果有图片或者额外的内容） */
+.articleRow {
+    display: flex;             /* 使用 flexbox 布局 */
+    align-items: center;       /* 垂直居中对齐图片和文字 */
+    margin-bottom: 15px;       /* 每行之间的间距 */
+}
+
+/* 图片样式 */
+.articleImage {
+    width: 150px;               /* 设置图片宽度 */
+    height: 150px;              /* 设置图片高度 */
+    margin-right: 20px;        /* 图片与文字之间的间距 */
+    border-radius: 10%;        /* 图片圆弧显示 */
+}
+/* 给包裹文章的链接添加样式 */
+.articleBoxLink {
+    text-decoration: none; /* 去掉链接的下划线 */
+    display: block;        /* 使链接占满整个父容器 */
+}
